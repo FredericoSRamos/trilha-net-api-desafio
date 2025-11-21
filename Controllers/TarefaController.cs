@@ -97,6 +97,7 @@ namespace TrilhaApiDesafio.Controllers
             tarefaBanco.Data = tarefa.Data;
             tarefaBanco.Status = tarefa.Status;
             tarefaBanco.Titulo = tarefa.Titulo;
+            tarefaBanco.Descricao = tarefa.Descricao;
             
             // Atualizar a variável tarefaBanco no EF e salvar as mudanças (save changes)
             _context.Tarefas.Update(tarefaBanco);
